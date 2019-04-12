@@ -1,0 +1,12 @@
+[max_cost] (-1) {hard}
+[min_host] (-1) {hard}
+[max_host] (-1) {hard}
+[max_pow] (-1) {hard}
+[max_cpu] (50) {hard}
+[max_ram] (-1) {hard}
+[max_bw] (-1) {hard}
+[max_stor] (-1) {hard}
+[min_cpu] (-1) {hard}
+[min_ram] (-1) {hard}
+[min_bw] (-1) {hard}
+[min_stor] (-1) {hard}

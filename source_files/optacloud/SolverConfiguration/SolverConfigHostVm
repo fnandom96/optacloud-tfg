@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver>
+    <!-- Domain model configuration -->
+    <solutionClass>com.optacloud.domain.HostVmBalance</solutionClass>
+    <entityClass>org.cloudbus.cloudsim.Vm</entityClass>
+
+    <!-- Score configuration -->
+    <scoreDirectorFactory>
+        <!-- <easyScoreCalculatorClass>com.optacloud.ScoreCalculation.HostVm.HostVmSimpleScoreCalculator</easyScoreCalculatorClass> -->
+        <!-- <easyScoreCalculatorClass>com.optacloud.ScoreCalculation.HostVm.HostVmBinaryScoreCalculator</easyScoreCalculatorClass> -->
+        <!-- <easyScoreCalculatorClass>com.optacloud.ScoreCalculation.HostVm.HostVmMinPowerScoreCalculator</easyScoreCalculatorClass> -->
+        <!-- <easyScoreCalculatorClass>com.optacloud.ScoreCalculation.HostVm.HostVmMinLostScoreCalculator</easyScoreCalculatorClass> -->
+        <easyScoreCalculatorClass>com.optacloud.ScoreCalculation.HostVm.HostVmCustomScoreCalculator</easyScoreCalculatorClass>
+    </scoreDirectorFactory>
+
+    <!-- Optimization algorithms configuration -->
+    <constructionHeuristic>
+        <constructionHeuristicType>first_fit_decreasing</constructionHeuristicType>
+    </constructionHeuristic>
+
+    <localSearch>
+        <localSearchType>tabu_search</localSearchType>
+    </localSearch>
+
+    <termination>
+        <secondsSpentLimit>15</secondsSpentLimit>
+    </termination>
+
+</solver>
+
