@@ -1,4 +1,4 @@
-package com.optacloud;
+﻿package com.optacloud;
 
 import org.cloudbus.cloudsim.*;
 import org.cloudbus.cloudsim.core.CloudSim;
@@ -537,7 +537,6 @@ public class mainDelayPower {
             Log.printLine(act_mips + "/" + total_mips + indent + act_ram + "/" + total_ram + indent +
                     act_bw + "/" + total_bw + indent + act_storage + "/" + total_storage + indent +
                     power);
-            System.out.println(3600 * 1000 / (3600 * 1000));
         }
 	}
 }
